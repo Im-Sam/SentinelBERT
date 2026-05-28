@@ -1,0 +1,25 @@
+log
+2026-05-28 EventID=4624 User=john.doe IP=10.0.0.8 Status=SUCCESS
+2026-05-28 EventID=4624 User=alice IP=10.0.0.9 Status=SUCCESS
+2026-05-28 EventID=4634 User=bob IP=10.0.0.10 Status=SUCCESS
+2026-05-28 EventID=4672 User=service.account IP=10.0.0.12 Status=SUCCESS
+2026-05-28 EventID=4624 User=maria.s IP=192.168.1.20 Status=SUCCESS
+
+2026-05-28 EventID=4648 User=bob IP=10.0.0.10 Status=ATTEMPT
+2026-05-28 EventID=4625 User=admin IP=10.0.0.12 Status=FAIL
+2026-05-28 EventID=4625 User=service.account IP=10.0.0.9 Status=FAIL
+2026-05-28 EventID=4648 User=root IP=185.22.11.9 Status=UNUSUAL_LOGIN_ATTEMPT
+
+2026-05-28 EventID=4624 User=john.doe IP=10.0.0.8 Status=SUCCESS
+2026-05-28 EventID=4624 User=john.doe IP=10.0.0.8 Status=SUCCESS
+2026-05-28 EventID=4625 User=john.doe IP=10.0.0.8 Status=FAIL
+
+EventID=4624 User=john.doe IP=10.0.0.8 Status=SUCCESS MFA=FAIL
+EventID=4624 User=service.account IP=10.0.0.12 Status=SUCCESS
+EventID=4625 User=john.doe IP=10.0.0.8 Status=FAIL (1 attempt)
+
+EventID=4624 User=admin IP=10.0.0.8 Status=SUCCESS (new device)
+EventID=4625 User=john.doe IP=10.0.0.8 Status=FAIL (1 attempt)
+
+EventID=4625 User=root IP=185.22.11.9 Status=FAIL 20x
+EventID=4768 User=admin IP=45.77.23.11 Status=FAIL
