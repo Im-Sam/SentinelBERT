@@ -4,6 +4,8 @@ SentinelBERT is a transformer-based anomaly detection system for Windows and Azu
 
 It fine-tunes a DistilBERT model to classify log lines as **normal or suspicious**, enabling early detection of credential abuse, brute force attempts, and anomalous authentication behavior.
 
+![screenshot](https://github.com/Im-Sam/SentinelBERT/blob/main/screenshots/test-csv-data-output.PNG "Homepage with test data")
+
 ---
 
 # 🚨 System Overview
