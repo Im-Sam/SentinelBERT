@@ -2,6 +2,5 @@ venv/
 __pycache__/
 *.pyc
 models/save_model/
-data/
 *.log
 .DS_Store
